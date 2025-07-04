@@ -1,24 +1,24 @@
 import confetti from "canvas-confetti";
 
-interface ConfettiOptions extends confetti.Options {
-    particleCount?: number;
-    angle?: number;
-    spread?: number;
-    startVelocity?: number;
-    decay?: number;
-    gravity?: number;
-    drift?: number;
-    flat?: boolean;
-    ticks?: number;
-    origin?: { x: number; y: number };
-    colors?: string[];
-    shapes?: confetti.Shape[];
-    zIndex?: number;
-    disableForReducedMotion?: boolean;
-    useWorker?: boolean;
-    resize?: boolean;
-    canvas?: HTMLCanvasElement | null;
-    scalar?: number;
+interface ConfettiOptions {
+  particleCount?: number;
+  angle?: number;
+  spread?: number;
+  startVelocity?: number;
+  decay?: number;
+  gravity?: number;
+  drift?: number;
+  flat?: boolean;
+  ticks?: number;
+  origin?: { x: number; y: number };
+  colors?: string[];
+  shapes?: string[];
+  zIndex?: number;
+  disableForReducedMotion?: boolean;
+  useWorker?: boolean;
+  resize?: boolean;
+  canvas?: HTMLCanvasElement | null;
+  scalar?: number;
 }
 
 const Confetti = (options: ConfettiOptions) => {
